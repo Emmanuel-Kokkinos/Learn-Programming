@@ -1,32 +1,10 @@
-# Node and React JS Tutorial
-# Frontend and Backend setup with page routing
-
-I used Homebrew to install Node. Before starting, I like to run the following commands...
-
-Homebrew Commands:
+**If cloning from GitHub:**
+- clone repository
+- cd to local repository
+- Delete the node_modules folder and any 'lock' files such as 
+- yarn.lock or package-lock.json if present.
 ```javascript
-brew update
-brew upgrade
-```
-
-Check which version of Node and NPM you are running:
-```javascript
-node -v
-npm -v
-```
-
-Initialize a React App:
-```javascript
-npx create-react-app frontend
-or
-npm init react-app ./frontend
-```
-
-Initialize the Node backend:
-```javascript
-mkdir backend
-cd backend
-npm init -y
+npm install
 ```
 
 frontend folder needs this package installed:
@@ -46,3 +24,25 @@ Update the frontend/package.json with the "proxy" code:
 ```
 
 See the package.json file for npm run scripts.
+
+
+**If starting from scratch:**
+Initialize a React App:
+```javascript
+npx create-react-app frontend
+or
+npm init react-app ./frontend
+```
+
+Initialize the Node backend:
+```javascript
+mkdir backend
+cd backend
+npm init -y
+```
+
+**To run app:**
+- cd to backend
+```javascript
+npm run dev
+```
