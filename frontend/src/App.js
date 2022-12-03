@@ -2,7 +2,7 @@
 import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Tweet from './components/Tweet';
+import Algorithm from './components/Algorithm';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
           <Nav />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/tweets" exact component={Tweet} />
+            <Route path="/algorithms" exact component={Algorithm} />
           </Switch>
       </div>
     </Router>
