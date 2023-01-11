@@ -1,7 +1,35 @@
-.gameBoard {
-    width: 800px;
-    height: 600px;
+#gameBoard {
+    width: 600px;
+    height: 400px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
     box-shadow: 0 0 20px #c73030;
+}
+
+#questions {
+    margin-top: 20px;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#snake {
+    background-image: url("../assets/snake_character.png");
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+
+#book {
+    background-image: url("../assets/book.png");
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+}
+
+#collectable {
+
 }

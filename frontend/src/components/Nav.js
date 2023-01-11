@@ -1,5 +1,5 @@
 import React from 'react'; // ES6 js
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 function Nav() {
     return(
@@ -9,8 +9,8 @@ function Nav() {
             </button>
             <div id="navMainMenu" class="navbar-collapse collapse">
                 <div class="navbar-nav ml-auto">
-                    <Link to='/' className="nav-item nav-link active">Home</Link>
-                    <Link to='/snake' className="nav-item nav-link">Snake</Link>
+                    <NavLink to='/' exact={true} className={({ isActive }) => isActive ? "nav-item nav-link active" : "nav-item nav-link"}>Home</NavLink>
+                    <NavLink to='/snake' className={({ isActive }) => isActive ? "nav-item nav-link active" : "nav-item nav-link"}>Snake</NavLink>
                 </div>
             </div>
         </nav>
